@@ -13,7 +13,7 @@ A multi-page responsive website for a fictional hospital built using HTML and CS
 - CSS
 
 ## 🔗 Live Demo:
-[View Live Website](https://ankitmishra2005.github.io/hospital-management-system)
+[View Live Website]( https://ankitmishra2005.github.io/Hospital-Management-System/)
 
 ## 🙋‍♂️ Author:
 - [Ankit Mishra](https://linkedin.com/in/ankit-mishra-b01621325)
