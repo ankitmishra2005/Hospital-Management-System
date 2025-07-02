@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Appointment - CityCare Hospital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="appointment-page">
+  <header>
+    <div class="container">
+      <h1>
+        <i class="fa-solid fa-calendar-check"></i> CityCare Hospital <i class="fa-solid fa-calendar-check"></i>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="appointment.html" class="active"><i class="fa-solid fa-calendar-check"></i> Appointments <i class="fa-solid fa-calendar-check"></i></a></li>
+          <li><a href="patients.html">Patients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="appointment">
+      <h2>Book an Appointment</h2>
+      <form action="#" method="POST" class="appointment-form">
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="phone">Mobile Number:</label><br />
+        <input type="tel" id="phone" name="phone" required /><br />
+
+        <label for="department">Department:</label><br />
+        <select id="department" name="department" required>
+          <option >--Select Department--</option>
+          <option value="General Medicine">General Medicine</option>
+          <option value="Cardiology">Cardiology</option>
+          <option value="Orthopedics">Orthopedics</option>
+          <option value="Neurology">Neurology</option>
+          <option value="Pediatrics">Pediatrics</option>
+          <option value="Gynecology">Gynecology</option>
+        </select><br />
+
+        <label for="date">Preferred Date:</label><br />
+        <input type="date" id="date" name="date" required /><br />
+
+        <input type="submit" value="Book Appointment" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+    <p>&copy; 2025 CityCare Hospital. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

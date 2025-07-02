@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::after {
+  content: "Madeby Ankit Mishra";
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #343a40;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ========== PAGE THEMES ========== */
+
+/* Home Page */
+body.home-page {
+  background-color: #e3f2fd;
+}
+body.home-page header {
+  background: linear-gradient(90deg, #2196f3, #1976d2);
+}
+body.home-page main h2 {
+  color: #0d47a1;
+}
+
+body.home-page {
+  background-image: url('https://helptravelindia.com/wp-content/uploads/2024/07/City-Hospital-Dindigul-Tamil-Nadu.jpg');
+   /* background-image: url('https://www.ekarnal.com/wp-content/uploads/2016/12/City-Care-Hospital.jpg'); */
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+body.home-page::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.7); 
+  z-index: -1;
+}
+
+body.home-page header {
+  background: transparent; 
+  box-shadow: none;
+}
+
+
+/* About Page */
+body.about-page {
+  background-color: #e8f5e9;
+}
+body.about-page header {
+  background: linear-gradient(90deg, #66bb6a, #388e3c);
+}
+
+body.about-page main h2 {
+  color: #1b5e20;
+}
+
+
+/* Department Page */
+body.department-page {
+  background-color: #fff8e1; 
+}
+body.department-page header {
+  background: linear-gradient(90deg, #ffca28, #ff8f00);
+}
+body.department-page main h2 {
+  color: #ff6f00;
+}
+
+/* Doctor Page */
+body.doctor-page {
+  background-color: #e0f7fa; 
+}
+body.doctor-page header {
+  background: linear-gradient(90deg, #00acc1, #007c91);
+}
+body.doctor-page main h2 {
+  color: #004d40;
+}
+
+/* Appointment Page */
+body.appointment-page {
+  background-color: #f3e5f5; 
+}
+body.appointment-page header {
+  background: linear-gradient(90deg, #8e24aa, #6a1b9a);
+}
+body.appointment-page main h2 {
+  color: #4a148c;
+}
+
+/* Patients List Page */
+body.patients-page {
+  background-color: #fff3e0;
+}
+body.patients-page header {
+  background: linear-gradient(90deg, #ffa726, #fb8c00);
+}
+body.patients-page main h2 {
+  color: #ef6c00;
+}
+
+/* Patient Details Page */
+body.patient-details-page {
+  background-color: #ffebee;
+}
+body.patient-details-page header {
+  background: linear-gradient(90deg, #e57373, #d32f2f);
+}
+body.patient-details-page main h2 {
+  color: #b71c1c;
+}
+
+/* Contact Page */
+body.contact-page {
+  background-color: #f3e5f5;
+}
+body.contact-page header {
+  background: linear-gradient(90deg, #ab47bc, #8e24aa);
+}
+body.contact-page main h2 {
+  color: #6a1b9a;
+}
+
+/* ========== COMMON LAYOUT & COMPONENT STYLES ========== */
+
+header {
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+main h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* Patient List */
+.patients-list ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 700px;
+  margin: auto;
+}
+.patients-list ul li {
+  margin-bottom: 15px;
+}
+.patients-list ul li a {
+  display: block;
+  padding: 12px 20px;
+  border: 2px solid #20c997;
+  border-radius: 8px;
+  color: #20c997;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  background-color: white;
+}
+.patients-list ul li a:hover {
+  background-color: #20c997;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Patient Details */
+.patient-details {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.patient-details h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+.patient-details ul {
+  list-style: none;
+  padding: 0;
+}
+.patient-details ul li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Contact */
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #323d48;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
